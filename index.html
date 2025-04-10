@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Math Master Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🧠 Math Master Pro</h1>
+  <div id="game">
+    <p>Question <span id="qCount">1</span>: <span id="question"></span></p>
+    <input type="number" id="answerInput" placeholder="Enter Answer" />
+    <button onclick="checkAnswer()">Submit</button>
+    <p id="feedback"></p>
+    <p>Score: <span id="score">0</span></p>
+    <p>⏱ Time Left: <span id="time">10</span> seconds</p>
+  </div>
+
+  <div id="gameOver" style="display:none;">
+    <h2>🎮 Game Over</h2>
+    <p>Your Final Score: <span id="finalScore"></span></p>
+    <button onclick="restartGame()">🔁 Restart</button>
+  </div>
+
+  <!-- Sounds -->
+  <audio id="correctSound" src="correct.mp3"></audio>
+  <audio id="wrongSound" src="wrong.mp3"></audio>
+  <audio id="gameOverSound" src="gameover.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
