@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  text-align: center;
+  padding-top: 50px;
+}
+
+input, button {
+  font-size: 18px;
+  padding: 8px;
+  margin: 10px;
+}
+
+#feedback {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#gameOver {
+  margin-top: 30px;
+  color: red;
+}
